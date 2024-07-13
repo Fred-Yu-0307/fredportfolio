@@ -46,7 +46,6 @@ section {
 }
   
 .navbar-nav .nav-link.active {
-    background-color: #6242B5;
     border-radius: 5px;
 }
 
@@ -73,7 +72,7 @@ main {
 
 .landing-subheader {
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -106,7 +105,7 @@ main {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 24px;
+    border-radius: 5em;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -133,7 +132,6 @@ main {
   }
   
   .blog-nav-text .nav-link.active {
-    background-color: #1E90FF;
     border-radius: 5px;
     color: #FFFFFF;
   }
@@ -149,11 +147,7 @@ main {
     background-repeat: no-repeat;
     color: white; /* Adjust text color for readability */
     padding: 0px 20px; /* Adjust padding as needed */
-    height: 80vh; /* Adjust height as needed */
-}
-
-.landing-container {
-    min-height: 50vh;
+    min-height: 80vh; /* Adjust height as needed */
 }
 
 span.highlight-blue {
@@ -347,9 +341,20 @@ span.company-visit2 {
   background-color: #f2f2f2;
   width: min-content;
   box-shadow: 0px 0px 15px #00000027;
-  padding: 15px 10px;
+  padding: 10px 8px;
   border-radius: 5em;
 }
+
+.social-buttons2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f2f2f2; */
+    width: min-content;
+    /* box-shadow: 0px 0px 15px #00000027; */
+    padding: 10px 8px;
+    /* border-radius: 5em; */
+  }
 
 .social-button {
   display: flex;
@@ -373,6 +378,11 @@ span.company-visit2 {
   transition: 0.3s;
   height: 20px;
 }
+
+.social-buttons2 svg {
+    transition: 0.3s;
+    height: 20px;
+  }
 
 .facebook {
   background-color: #3b5998;
@@ -505,6 +515,17 @@ section.show {
     transform: translateY(0);
 }
 
+.contact-me {
+    background-color: #FFD700;
+    color: #000080 !important;
+    border-radius: 5em;
+    padding: 12px 24px !important;
+}
+
+.blog-main {
+    margin-top: 130px;
+}
+
 
 
 
@@ -532,7 +553,7 @@ section.show {
     }
 
     .landing-subheader {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .section-header {
