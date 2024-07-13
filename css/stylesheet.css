@@ -189,12 +189,14 @@ span.highlight-white {
     color: #00BFFF;
     font-weight: 700;
     letter-spacing: 3px;
+    font-size: 32px;
 }
 
 .section-header2 {
     color: #FFD700;
     font-weight: 700;
     letter-spacing: 3px;
+    font-size: 32px;
 }
 
 /* Schedule Design */
@@ -526,6 +528,10 @@ section.show {
     margin-top: 130px;
 }
 
+.star-list {
+    display: none !important;
+}
+
 
 
 
@@ -537,6 +543,10 @@ section.show {
 @media screen and (min-width: 768px) { 
     .nav-blog {
         padding: 20px 80px;
+    }
+
+    .star-list {
+        display: inline !important;
     }
 
     .section-subheading {
