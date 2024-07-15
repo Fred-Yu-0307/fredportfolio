@@ -15,12 +15,12 @@
                 <img class="blog-logo" src="./images/brain.png" alt="Logo" class="d-inline-block align-text-top">
                 <span class="portfolio-logo logo-label ps-3">FRED ANTHONY YU</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler  d-flex align-content-center align-items-center justify-content-center d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse blog-nav-text" id="navbarNav">
-                <ul class="navbar-nav ms-auto" id="mainMenu">
+                <ul class="navbar-nav ms-auto text-center pt-4 pt-0" id="mainMenu">
                     <li class="nav-item">
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
@@ -58,7 +58,7 @@
                     <!-- <a class="btn gradient-btn mt-3 me-lg-2" href="#contacts">Let's Talk.</a> -->
 
                     <div class="d-flex flex-column align-items-center flex-lg-row">
-                        <a class="btn gradient-btn2 mt-3" href="#projects">My Works</a>
+                        <a class="btn gradient-btn2 mt-3" href="yu-cv.pdf" download="yu-cv.pdf">Download CV</a>
 
                         <div class="social-buttons2 mt-3 ms-lg-3">
                             <a href="https://github.com/Fred-Yu-0307" class="social-button github">
@@ -111,16 +111,132 @@
         </section>
 
         <section id="about" class="p-lg-5 p-2">
-            <div class="landing-container d-flex justify-content-center flex-lg-row flex-column align-items-center">
-                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+            <div class="landing-container about-me-container d-flex justify-content-center flex-lg-row flex-column align-items-center ">
+                <!-- <div class="col-12 col-lg-6 mt-5 mt-lg-0">
                     <img class="landing-profile" src="./images/fredyu.png" alt="">
+                </div> -->
+
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex flex-column justify-content-start">
+                    <h4 class="section-header me-header mb-4 mb-lg-0 mt-lg-0 text-center text-lg-start">About Me</h4>
+                    <p class="me-header">Here is some of my personal information for you to review. </p>
+                    <div class="navigation-container">
+                        <!-- Nav pills -->
+                        <div class=" pill-container d-flex justify-content-center flex-column">
+                            <ul class="nav nav-pills mb-3 pill-box d-flex flex-row flex-lg-column justify-content-evenly text-center" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="tab1-tab" data-bs-toggle="pill" data-bs-target="#aboutMe" type="button" role="tab" aria-controls="tab1" aria-selected="true"><img class="icon-aboutme" src="./images/icons/file-user.png" alt=""><span class="mob-hide">About Me</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="tab2-tab" data-bs-toggle="pill" data-bs-target="#myEducation" type="button" role="tab" aria-controls="tab2" aria-selected="false"><img class="icon-aboutme" src="./images/icons/graduation-cap.png" alt=""><span class="mob-hide">Education</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="tab3-tab" data-bs-toggle="pill" data-bs-target="#myExperience" type="button" role="tab" aria-controls="tab3" aria-selected="false"><img class="icon-aboutme" src="./images/icons/ux-browser.png" alt=""><span class="mob-hide">Experience</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-6 mb-lg-5 text-center text-lg-start">
-                    <h4 class="text-center section-header mb-4 mb-lg-5 mt-5 mt-lg-0 ">About Me</h4>
-                    <h5 class="about-me-introduction">
-                        Hello! I'm Fred Anthony Yu, a dedicated computer science student specializing in full-stack web development. With a focus on creating seamless user experiences, I combine frontend expertise in HTML, CSS, and JavaScript with robust backend skills in technologies like Node.js, Express, and database management. Explore my portfolio to see how I bring ideas to life through innovative web solutions.
-                    </h5>
-                    <a class="btn gradient-btn2 mt-3" href="yu-cv.pdf" download="yu-cv.pdf">Download My CV</a>
+
+                <!-- Tab panes -->
+                <div class="col-12 col-lg-8 mb-lg-5 text-center text-lg-start ps-0 ps-lg-4">
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- BASIC INFORMATION -->
+                        <div class="tab-pane fade show active" id="aboutMe" role="tabpanel" aria-labelledby="tab1-tab"> 
+                            <h4 class="subheader-about mb-4 mb-lg-4 mt-2 mt-lg-0 ">Basic Information</h4>
+                            <p class="sec-desc mb-5 text-start">Below is a detailed overview of my educational background, including my college degree, senior high school, high school education, and various online courses that I have completed. </p>
+                            <div class="basic-information d-flex flex-column flex-lg-row">
+                                <!-- INFO -->
+                                <div class="col-12 col-lg-5 text-start">
+                                    <h4 class="my-info"><span class="label-info pe-3">Name</span>Fred Anthony D. Yu</h4>
+                                    <h4 class="my-info"><span class="label-info pe-3">Birthdate</span>March 7, 2003</h4>
+                                    <h4 class="my-info"><span class="label-info pe-3">Nationality</span>Filipino</h4>
+                                    <h4 class="my-info"><span class="label-info pe-3">Experience</span>3+ Years</h4>
+                                </div>
+        
+                                <!-- INFO -->
+                                <div class="col-12 col-lg-7 text-start">
+                                    <h4 class="my-info"><span class="label-info pe-3">Language</span>English, Filipino</h4>
+                                    <h4 class="my-info"><span class="label-info pe-3">Address</span>Zamboanga City, Philippines</h4>
+                                    <h4 class="my-info"><span class="label-info pe-3">Contact #</span>(+63) 935-374-2658</h4>
+                                    <h4 class="my-info"><span class="label-info pe-3">Email</span>yufredanthony@gmail.com</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EDUCATION -->
+                        <div class="tab-pane fade" id="myEducation" role="tabpanel" aria-labelledby="tab1-tab"> 
+                            <h4 class="subheader-about mb-4 mb-lg-4 mt-2 mt-lg-0 ps-2">Education</h4>
+                            <p class="sec-desc ps-2 text-start">Below is a detailed overview of my educational background, including my college degree, senior high school, high school education, and various online courses that I have completed. </p>
+                            <div class="basic-information d-flex">
+                                <!-- INFO -->
+                                <div class="col-12 text-start d-flex flex-column flex-lg-row flex-wrap">
+                                    <div class="card-container col-12 col-lg-6">
+                                        <div class="educCard">
+                                            <h5 class="yearLevel">2021-Present</h5>
+                                            <h4 class="course">BS Computer Science</h4>
+                                            <h5 class="educType">College</h5>
+                                            <h5 class="school">Western Mindanao State University</h5>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="card-container col-12 col-lg-6">
+                                        <div class="educCard">
+                                            <h5 class="yearLevel">2019-2021</h5>
+                                            <h4 class="course">Accountancy, Business, and Management</h4>
+                                            <h5 class="educType">Senior High School</h5>
+                                            <h5 class="school">Zamboanga Chong Hua High School</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-container col-12 col-lg-6">
+                                        <div class="educCard">
+                                            <h5 class="yearLevel">2015-2019</h5>
+                                            <h4 class="course">Secondary Education</h4>
+                                            <h5 class="educType">Junior High School</h5>
+                                            <h5 class="school">Zamboanga City High School - Main</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-container col-12 col-lg-6">
+                                        <div class="educCard">
+                                            <h5 class="yearLevel">2022</h5>
+                                            <h4 class="course">Programming Foundations</h4>
+                                            <h5 class="educType">Online Course</h5>
+                                            <h5 class="school">LinkedIn Learning</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="tab-pane fade" id="myExperience" role="tabpanel" aria-labelledby="tab1-tab"> 
+                            <h4 class="subheader-about mb-4 mb-lg-4 mt-2 mt-lg-0 ps-2">Work Experiences</h4>
+                            <p class="sec-desc ps-2 text-start">Below is a comprehensive list of my work experience throughout my journey as a full-stack web developer. This section details the various roles I have undertaken, and the projects I have worked on. </p>
+                            <div class="basic-information d-flex">
+                                <!-- INFO -->
+                                <div class="col-12 text-start d-flex flex-column flex-lg-row flex-wrap">
+                                    <div class="card-container col-12 col-lg-6">
+                                        <div class="educCard">
+                                            <h5 class="yearLevel">2023</h5>
+                                            <h4 class="course">Full Stack Developer</h4>
+                                            <h5 class="school">YABBE Innovations</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-container col-12 col-lg-6">
+                                        <div class="educCard">
+                                            <h5 class="yearLevel">2023-2024</h5>
+                                            <h4 class="course">Full Stack Developer</h4>
+                                            <h5 class="school">Cognicore</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>

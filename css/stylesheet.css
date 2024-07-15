@@ -8,23 +8,11 @@
 }
 
 body {
-    background-color: #212F3D;
+    background-color: #1C2833;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-body {
-    position: relative;
-    z-index: 0; /* Ensure it's behind other elements */
-    background-image: linear-gradient(30deg, #34495E 12%, transparent 12.5%, transparent 87%, #34495E 87.5%, #34495E),
-                      linear-gradient(150deg, #34495E 12%, transparent 12.5%, transparent 87%, #34495E 87.5%, #34495E),
-                      linear-gradient(30deg, #34495E 12%, transparent 12.5%, transparent 87%, #34495E 87.5%, #34495E),
-                      linear-gradient(150deg, #34495E 12%, transparent 12.5%, transparent 87%, #34495E 87.5%, #34495E),
-                      linear-gradient(60deg, #34495E77 25%, transparent 25.5%, transparent 75%, #34495E77 75%, #34495E77),
-                      linear-gradient(60deg, #34495E77 25%, transparent 25.5%, transparent 75%, #34495E77 75%, #34495E77);
-    background-size: 78px 137px;
-    background-position: 0 0, 0 0, 39px 68px, 39px 68px, 0 0, 39px 68px;
-}
 
 .portfolio-logo {
     color: #1E90FF;
@@ -32,7 +20,7 @@ body {
 }
 
 .navbar {
-    background-color: #212F3D !important; 
+    background-color: #1C2833 !important; 
 }
 
 section {
@@ -115,12 +103,6 @@ main {
     border: none; /* Remove border to make it look seamless */
 }
 
-
-
-
-
-
-
 /* Change the text color of nav-link class */
 .blog-nav-text .nav-link {
     font-weight: 500;
@@ -159,21 +141,31 @@ span.highlight-white {
 }
 
 .pill-box {
-    background-color: #8C52FF;
-    padding: 8px 12px;
-    border-radius: 18px;
+    padding: 0;
+    background-color: #34495E;
+    border-radius: 5em;
+}
+
+.me-header {
+    line-height: 26px;
+    padding: 0;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    border-radius: 18px;
-    background-color: #FF8C52 !important;
+    border-radius: 5em;
+    background-color: #00BFFF !important;
+    width: 100%;
 }
 
 .nav-pills .nav-link {
     padding: 8px 24px;
     font-weight: 500;
     color: #FFFFFF;
+    background-color: #34495E;
+    width: 100%;
+    border-radius: 4px;
+    margin: 8px 0;
 }
 
 .section-subheading {
@@ -332,7 +324,7 @@ span.company-visit2 {
 
 .container-footer {
     min-height: 40vh;
-    background-color: #1C2833;
+    background-color: #212F3C;
 }
 
 /* Socials */
@@ -532,7 +524,102 @@ section.show {
     display: none !important;
 }
 
+.my-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F2F3F4;
+    letter-spacing: 1px;
+    padding: 6px 0;
+}
 
+.label-info {
+    font-weight: 300 !important;
+    color: #ABB2B9;
+    font-size: 12px;
+}
+
+.educCard {
+    background-color: #2E4053;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 8px;
+}
+
+.educCard:hover {
+    background-color: #273746;
+}
+
+.course {
+    font-weight: 400;
+    font-size: 18px;
+    color: #F8F9F9;
+}
+
+.school {
+    padding-top: 24px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #F8F9F9;
+}
+
+.educType {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1E90FF;
+}
+
+.yearLevel {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFD700;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+}
+
+.sec-desc {
+    font-weight: 300;
+    font-size: 16px;
+    color: #F8F9F9;
+    line-height: 36px;
+}
+
+.subheader-about {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #FFD700;
+}
+
+.icon-aboutme {
+    width: 30px;
+    margin-right: 0;
+}
+
+.mob-hide {
+    display: none;
+}
+
+/* Customize the navbar-toggler */
+.navbar-toggler {
+    padding: 8px; /* Add padding for a larger button */
+}
+
+/* Customize the navbar-toggler-icon */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(30, 144, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Custom icon color */
+
+}
+
+/* Optional: Adjust the size of the icon */
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+}
 
 
 
@@ -545,6 +632,33 @@ section.show {
         padding: 20px 80px;
     }
 
+    .mob-hide {
+        display: inline;
+    }
+
+    .icon-aboutme {
+        margin-right: 12px;
+    }
+    
+
+    .educCard {
+        padding: 16px 24px;
+        border-radius: 4px;
+        margin: 8px;
+    }
+
+    .label-info {
+        font-size: 16px;
+    }
+
+    .about-me-container {
+        margin: 0 60px;
+    }
+
+    .my-info {
+        font-size: 18px;
+        padding: 12px 0;
+    }
     .star-list {
         display: inline !important;
     }
@@ -624,6 +738,21 @@ section.show {
     #home {
         margin: 0 100px;
         /* min-height: 50vh; */
+    }
+
+    .me-header {
+        line-height: 32px;
+        padding: 12px 64px;
+    }
+
+    .pill-box {
+        padding: 12px 64px;
+        background-color:transparent;
+        border-radius: 0px;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        border-radius: 4px;
     }
 
     
