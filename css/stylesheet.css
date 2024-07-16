@@ -172,8 +172,8 @@ span.highlight-white {
     padding: 12px 0;
     color: #FBFCFC;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 14px;
+    line-height: 28px;
     letter-spacing: 1.5px;
 }
 
@@ -324,7 +324,6 @@ span.company-visit2 {
 
 .container-footer {
     min-height: 40vh;
-    background-color: #212F3C;
 }
 
 /* Socials */
@@ -479,7 +478,6 @@ span.company-visit2 {
 
 #home {
     margin: 0;
-
 }
 
 /* Skills */
@@ -499,15 +497,17 @@ span.company-visit2 {
     font-size: 18px;
 }
 
-section {
+section:not(.parallax-background) {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(20px) scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 section.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
 }
+
+
 
 .contact-me {
     background-color: #FFD700;
@@ -621,6 +621,19 @@ section.show {
     height: 30px;
 }
 
+#about, #projects, #contacts {
+    background-color: #212F3D !important;
+}
+
+#home, #skills, #services, footer {
+    background-color: #1C2833 !important;
+}
+
+.project-body {
+    margin: 0 180px;
+}
+
+
 
 
 
@@ -634,6 +647,10 @@ section.show {
 
     .mob-hide {
         display: inline;
+    }
+
+    .project-body {
+        margin: 0;
     }
 
     .icon-aboutme {
@@ -664,7 +681,9 @@ section.show {
     }
 
     .section-subheading {
+        font-size: 20px;
         padding: 12px 180px;
+        line-height: 36px;
     }
 
     main {
@@ -672,7 +691,7 @@ section.show {
     }
 
     .landing-header {
-        font-size: 64px;
+        font-size: 58px;
         font-weight: 700;
     }
 
@@ -737,7 +756,7 @@ section.show {
 
     #home {
         margin: 0 100px;
-        /* min-height: 50vh; */
+        min-height: 100vh;
     }
 
     .me-header {
