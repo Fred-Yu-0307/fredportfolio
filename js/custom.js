@@ -77,3 +77,98 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// NEW: Search and Filter Logic (Updated for new HTML structure)
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('project-search');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectList = document.getElementById('project-list');
+
+    // Get all project cards (the .col-12.col-lg-6 divs)
+    const projectCards = projectList.querySelectorAll('.col-12.col-lg-6');
+
+    function filterAndSearchProjects() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter').toLowerCase();
+
+        projectCards.forEach(card => {
+            // Correctly select the project title using the new class
+            const cardTitle = card.querySelector('.venue-name').textContent.toLowerCase();
+            const cardCapsules = card.querySelectorAll('.proj-capsule');
+            const technologies = Array.from(cardCapsules).map(capsule => capsule.textContent.toLowerCase());
+
+            // Check if the project title or any of its capsules match the search term
+            const titleMatch = cardTitle.includes(searchTerm);
+            const technologyMatch = technologies.some(tech => tech.includes(searchTerm));
+            const searchMatches = titleMatch || technologyMatch;
+
+            // Check if the project's technologies include the active filter
+            const filterMatches = activeFilter === 'all' || technologies.includes(activeFilter);
+
+            // Show the card if both search and filter criteria are met
+            if (searchMatches && filterMatches) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Add event listener for the search input
+    searchInput.addEventListener('input', filterAndSearchProjects);
+
+    // Add event listeners for the filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove 'active' class from all buttons and add it to the clicked one
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            filterAndSearchProjects();
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('project-search');
+    const projectFilter = document.getElementById('project-filter');
+    const projectList = document.getElementById('project-list');
+
+    // Get all project cards (the .col-12.col-lg-6 divs)
+    const projectCards = projectList.querySelectorAll('.col-12.col-lg-6');
+
+    function filterAndSearchProjects() {
+        const searchTerm = searchInput.value.toLowerCase();
+        // Get the value from the selected option in the dropdown
+        const activeFilter = projectFilter.value.toLowerCase();
+
+        projectCards.forEach(card => {
+            // Correctly select the project title using the new class
+            const cardTitle = card.querySelector('.venue-name').textContent.toLowerCase();
+            const cardCapsules = card.querySelectorAll('.proj-capsule');
+            const technologies = Array.from(cardCapsules).map(capsule => capsule.textContent.toLowerCase());
+
+            // Check if the project title or any of its capsules match the search term
+            const titleMatch = cardTitle.includes(searchTerm);
+            const technologyMatch = technologies.some(tech => tech.includes(searchTerm));
+            const searchMatches = titleMatch || technologyMatch;
+
+            // Check if the project's technologies include the active filter
+            const filterMatches = activeFilter === 'all' || technologies.includes(activeFilter);
+
+            // Show the card if both search and filter criteria are met
+            if (searchMatches && filterMatches) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Add event listener for the search input
+    searchInput.addEventListener('input', filterAndSearchProjects);
+
+    // Add event listener for the dropdown change
+    projectFilter.addEventListener('change', filterAndSearchProjects);
+});
+
+

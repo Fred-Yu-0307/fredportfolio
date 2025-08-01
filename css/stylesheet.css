@@ -43,7 +43,7 @@ img.blog-logo {
 
 .blog-logo-footer {
     border-radius: 50%;
-    width: 120px;
+    width: 80px;
 }
 
 
@@ -286,21 +286,20 @@ span.company-visit2 {
 }
 
 .skill-image {
-    min-width: 160px;
-    max-width: 160px;
+    min-width: 80px;
+    max-width: 80px;
 }
 
 .speaker-name {
     color: #34495E;
     font-weight: 600;
-    font-size: 22px;
-    
+    font-size: 22px; 
 }
 
 .venue-name {
     color: #FDFEFE;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 14px;
     padding: 18px 0 0 0;
 }
 
@@ -436,18 +435,11 @@ span.company-visit2 {
     background-color: #FEF5E7;
 }
 
-.map-container iframe {
-
-    width: 100%;
-    height: 300px; /* Change this value to your desired height */
-    border: 0;
-}
-
 .map-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 200px;
+    min-height: 100px;
     max-width: 100%; /* Ensure container doesn't overflow */
     overflow: hidden; /* Hide any overflow */
 }
@@ -578,7 +570,7 @@ section.show {
 
 .sec-desc {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     color: #F8F9F9;
     line-height: 36px;
 }
@@ -633,6 +625,144 @@ section.show {
     margin: 0 !important;
 }
 
+/* Projects Section */
+.proj-capsule-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.proj-capsule {
+  background-color: #34495E;
+  color: #FFFFFF;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.proj-capsule:hover {
+  background-color: #1E90FF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.proj-capsule:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+#project-search {
+    border-radius: 20px;
+    background-color: #2C3E50;
+    border: 1px solid #34495E;
+    color: white;
+    padding: 8px 15px;
+}
+
+
+#project-search:focus {
+    box-shadow: 0 0 0 0.25rem rgba(30, 144, 255, 0.25);
+    border-color: #1E90FF;
+    outline: 0;
+}
+
+.filter-btn {
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.form-select {
+    border-radius: 20px;
+    background-color: #2C3E50;
+    border: 1px solid #34495E;
+    color: white;
+    padding: 8px 15px;
+    /* Custom arrow for the dropdown */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%231E90FF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(30, 144, 255, 0.25);
+    border-color: #1E90FF;
+    outline: 0;
+}
+
+.form-select {
+    border-radius: 20px;
+    background-color: #2C3E50;
+    border: 1px solid #34495E;
+    color: white;
+    padding: 8px 15px;
+    /* Custom arrow for the dropdown */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%231E90FF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(30, 144, 255, 0.25);
+    border-color: #1E90FF;
+    outline: 0;
+}
+
+/* NEW: Combined Contacts and Footer Section */
+.combined-section {
+    background: linear-gradient(135deg, #1C2833, #2C3E50);
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.combined-section .section-header2 {
+    color: #1E90FF;
+}
+
+.contact-item {
+    background-color: #1C2833;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #2C3E50;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.contact-item h6 {
+    font-weight: 600;
+}
+
+
+
 
 
 
@@ -656,6 +786,11 @@ section.show {
 
     .icon-aboutme {
         margin-right: 12px;
+    }
+
+    .skill-image {
+    min-width: 160px;
+    max-width: 160px;
     }
     
 
@@ -700,6 +835,10 @@ section.show {
         font-size: 28px;
     }
 
+    .sec-desc {
+    font-size: 20px;
+}
+
     .section-header {
         font-size: 38px;
     }
@@ -715,6 +854,10 @@ section.show {
     .sched-date {
         font-size: 22px;
     }
+
+    .venue-name {
+    font-size: 22px;
+}
 
     .mon-year {
         font-size: 24px;
