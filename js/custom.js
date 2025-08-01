@@ -77,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// NEW: Search and Filter Logic (Updated for new HTML structure)
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('project-search');
     const filterButtons = document.querySelectorAll('.filter-btn');
@@ -113,10 +112,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Add event listener for the search input
     searchInput.addEventListener('input', filterAndSearchProjects);
 
-    // Add event listeners for the filter buttons
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
             // Remove 'active' class from all buttons and add it to the clicked one
@@ -133,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectFilter = document.getElementById('project-filter');
     const projectList = document.getElementById('project-list');
 
-    // Get all project cards (the .col-12.col-lg-6 divs)
+    // Get all project cards 
     const projectCards = projectList.querySelectorAll('.col-12.col-lg-6');
 
     function filterAndSearchProjects() {
@@ -164,10 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Add event listener for the search input
     searchInput.addEventListener('input', filterAndSearchProjects);
 
-    // Add event listener for the dropdown change
     projectFilter.addEventListener('change', filterAndSearchProjects);
 });
 
